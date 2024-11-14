@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A37238;
+    padding: 10px 40px;
+}
+
+.logo-proyecto img {
+    height: 50px;
+}
+
+.contact-icons img {
+    width: 70px;
+    margin-left: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a4e23;
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #a27c4e;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #c19662;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.contact-form label {
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #A37238;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.form-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    background-color: #A37238;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}

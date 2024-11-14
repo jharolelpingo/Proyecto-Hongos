@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="tabla.css">
+</head>
+<body>
+<div class="navbar-top">
+        <div class="logo-proyecto">
+            <img src="logo.jpg" alt="Logo del Proyecto">
+        </div>
+        <div class="contact-icons">
+            <a href="whatsapp-link">
+                <img src="whatsapp.jpg" alt="Whatsapp">
+            </a>
+            <a href="facebook-link">
+                <img src="facebook.jpg" alt="Facebook">
+            </a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="inicio.html">Inicio</a>
+        <a href="hongos.html">¿Qué son los hongos entomopatógenos?</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <section class="form-container">
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form action="contacto-enviar.php" method="post" onsubmit="return enviarMensajeWhatsApp()">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="numero">Número de Teléfono:</label>
+                <input type="tel" id="numero" name="numero" required>
+
+                <label for="persona">Destinatario:</label>
+                <select id="persona" name="persona" required>
+                    <option value="mariana">Mariana Bernal</option>
+                    <option value="jose">José Jiménez</option>
+                    <option value="jharol">Jharol Mendez</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+        <img src="cientificos.jpg" alt="Imagen de Contacto">
+    </section>
+
+    
+    
+        <footer>
+        <p>© 2024 Proyecto Hongos Entomopatógenos. Tecnico Ambiental</p>
+    </footer>
+
+    <script>
+        function enviarMensajeWhatsApp() {
+            var persona = document.getElementById("persona").value;
+            var mensaje = document.getElementById("mensaje").value;
+            
+            var contactos = {
+                "mariana": "https://wa.me/+573132866505text=" + encodeURIComponent(mensaje),
+                "jose": "https://wa.me+57 3202553869text=" + encodeURIComponent(mensaje),
+                "jharol": "https://wa.me/+573134355354text=" + encodeURIComponent(mensaje)
+            };
+
+            window.open(contactos[persona], '_blank');
+
+            return false; 
+        }
+    </script>
+</body>
+</html>
